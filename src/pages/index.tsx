@@ -1,12 +1,17 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
-
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="bg-white px-10">
+    <main className=" bg-2626262 px-10">
       <section className="min-h-screen">
         <nav className="py-10 mb-12 flex justify-between">
-          <h1 className="text-xl">developedbynoah</h1>
+          <h1 className="text-xl">Noah T</h1>
+          <ul className="flex space-x-6">
+            <li>Projects</li>
+            <li>About Me</li>
+            <li>Contact</li>
+          </ul>
           <ul className="flex items-center">
             <li></li>
             <li>
@@ -28,8 +33,17 @@ export default function Home() {
             <AiFillGithub />
             <AiFillLinkedin />
           </div>
+          <div className=" bg-gradient-to-b from-teal-500 w-56 mx-auto rounded-full mt-20">
+            <div className="h-52"></div>
+          </div>
         </div>
-        <div></div>
+        <div>
+          <h1 className="text-center text-3xl font-bold">Projects Portfolio</h1>
+          <div className="flex justify-between">
+            <Image src="/patsbbqss.png" alt="me" width="300" height="300" className="rounded-lg"/>
+            <Image src="/bestrqss.png" alt="me" width="300" height="300" className="rounded-lg"/>
+          </div>
+        </div>
       </section>
     </main>
   );

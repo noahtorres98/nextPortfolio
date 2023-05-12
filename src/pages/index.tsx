@@ -3,7 +3,6 @@ import { CiDark } from "react-icons/ci";
 import { MdDarkMode } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
-import Navbar from "../../components/Navbar";
 import { useState } from "react";
 
 export default function Home() {

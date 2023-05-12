@@ -56,7 +56,7 @@ export default function Home() {
               />
               <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-teal-300 dark:peer-focus:ring-teal-500 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-teal-500"></div>
             </label>
-            <CiDark className="dark:text-white"/>
+            <CiDark className="dark:text-white" />
           </div>
           <div id="about" className="text-center p-10 ">
             <h2 className="text-5xl md:py-2 text-teal-600 font-medium">
@@ -65,13 +65,15 @@ export default function Home() {
             <h3 className="text-2xl py-2 dark:text-white">
               Frontend Developer
             </h3>
-            <p className="lg:w-80 text-md lg:text-lg py-5 leading-1 md:leading-8 mx-auto dark:text-white">
-              As a front-end developer with a passion for coding and designing
-              beautiful, user-friendly interfaces, I am always seeking new
-              challenges and opportunities to expand my skill set. With several
-              years of experience in front-end development, I have become
-              proficient in HTML, CSS, JavaScript, and other front-end
-              technologies.
+            <p className="lg:w-96 text-md lg:text-lg py-5 leading-1 md:leading-8 mx-auto dark:text-white">
+              As a front-end developer seeking new opportunities, I am eager to
+              expand my skill set and become a full-stack developer. I am
+              passionate about creating engaging and user-friendly interfaces,
+              and I am excited to apply this expertise to the back-end as well.
+              When I'm not coding, you can find me watching soccer and Formula
+              1, playing video games, or building computers. I thrive on
+              learning new things and tackling new challenges, and I am always
+              looking for ways to grow both personally and professionally.
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-200">
               <Link href="https://github.com/noahtorres98">
@@ -81,8 +83,15 @@ export default function Home() {
                 <AiFillLinkedin />
               </Link>
             </div>
-            <div className=" bg-gradient-to-b from-teal-500 w-56 mx-auto rounded-full mt-20">
-              <div className="h-52"></div>
+            <div className="relative bg-gradient-to-b from-teal-500 mx-auto rounded-full mt-20 lg:w-80 lg:h-80 w-40 h-40">
+              <div className="h-52">
+                <Image
+                  src={"/headshot.png"}
+                  alt="headshot"
+                  layout="fill"
+                  className="rounded-full"
+                />
+              </div>
             </div>
           </div>
           <div id="projects">
@@ -90,7 +99,7 @@ export default function Home() {
               Projects Portfolio
             </h1>
             <div className="mx-auto lg:max-w-7xl">
-              <p className="text-md py-2 leading-8 text-gray-800 text-center dark:text-white">
+              <p className="text-md py-2 leading-8 text-gray-800 text-center dark:text-white lg:text-lg lg:w-96 mx-auto lg:pt-10 lg:pb-10">
                 As a front-end developer, I have completed several projects that
                 showcase my skills in creating{" "}
                 <span className="text-teal-500">beautiful</span> and{" "}

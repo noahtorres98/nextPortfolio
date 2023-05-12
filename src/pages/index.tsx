@@ -1,4 +1,6 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+import { CiDark } from "react-icons/ci";
+import { MdDarkMode } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
@@ -15,7 +17,7 @@ export default function Home() {
   }
   return (
     <div className={darkMode ? "dark" : ""}>
-      <main className="bg-white dark:bg-cyan-950 px-10">
+      <main className="bg-slate-50 dark:bg-cyan-950 px-10">
         <section className="min-h-screen">
           <nav className="py-10 md:mb-12 flex justify-between">
             <h1 className="text-xl">
@@ -43,24 +45,27 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <label className="relative inline-flex items-center cursor-pointer">
-            <input type="checkbox" value="" className="sr-only peer" onClick={() => setDarkMode(!darkMode)}/>
-            <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
-            <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">
-              {darkMode ? "Light Mode" : "Dark Mode"}
-            </span>
-          </label>
-          {/* <button className="bg-red-100" onClick={}>
-            dark mode
-          </button> */}
+          <div className="flex place-content-end items-center space-x-1">
+            <MdDarkMode />
+            <label className="relative inline-flex items-center cursor-pointer">
+              <input
+                type="checkbox"
+                value=""
+                className="sr-only peer"
+                onClick={() => setDarkMode(!darkMode)}
+              />
+              <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-teal-300 dark:peer-focus:ring-teal-500 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-teal-500"></div>
+            </label>
+            <CiDark className="dark:text-white"/>
+          </div>
           <div id="about" className="text-center p-10 ">
             <h2 className="text-5xl md:py-2 text-teal-600 font-medium">
               Noah Torres
             </h2>
             <h3 className="text-2xl py-2 dark:text-white">
-              Frontend developer
+              Frontend Developer
             </h3>
-            <p className="lg:w-80 text-md py-5 leading-1 md:leading-8 mx-auto dark:text-white">
+            <p className="lg:w-80 text-md lg:text-lg py-5 leading-1 md:leading-8 mx-auto dark:text-white">
               As a front-end developer with a passion for coding and designing
               beautiful, user-friendly interfaces, I am always seeking new
               challenges and opportunities to expand my skill set. With several
@@ -84,7 +89,7 @@ export default function Home() {
             <h1 className="text-center text-3xl font-bold dark:text-white">
               Projects Portfolio
             </h1>
-            <div className="mx-auto lg:w-1/2">
+            <div className="mx-auto lg:max-w-7xl">
               <p className="text-md py-2 leading-8 text-gray-800 text-center dark:text-white">
                 As a front-end developer, I have completed several projects that
                 showcase my skills in creating{" "}
@@ -102,7 +107,7 @@ export default function Home() {
                     sizes="100vw"
                     style={{ width: "100%", height: "auto" }}
                   />
-                  <p className="shadow-xl p-7 rounded-b-xl dark:text-white dark:bg-cyan-800">
+                  <p className="bg-white shadow-xl p-7 rounded-b-xl dark:text-white dark:bg-cyan-800">
                     I created a stunning website for my uncle's barbeque
                     catering business. The site features high-quality food
                     images, and an intuitive menu. My uncle loved it, and I'm

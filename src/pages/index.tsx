@@ -43,7 +43,16 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <button className="bg-red-100" onClick={() => setDarkMode(!darkMode)}>dark mode</button>
+          <label className="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" value="" className="sr-only peer" onClick={() => setDarkMode(!darkMode)}/>
+            <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+            <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">
+              {darkMode ? "Light Mode" : "Dark Mode"}
+            </span>
+          </label>
+          {/* <button className="bg-red-100" onClick={}>
+            dark mode
+          </button> */}
           <div id="about" className="text-center p-10 ">
             <h2 className="text-5xl md:py-2 text-teal-600 font-medium">
               Noah Torres
@@ -59,7 +68,7 @@ export default function Home() {
               proficient in HTML, CSS, JavaScript, and other front-end
               technologies.
             </p>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
+            <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-200">
               <Link href="https://github.com/noahtorres98">
                 <AiFillGithub />
               </Link>
@@ -75,7 +84,7 @@ export default function Home() {
             <h1 className="text-center text-3xl font-bold dark:text-white">
               Projects Portfolio
             </h1>
-            <div className="mx-auto">
+            <div className="mx-auto lg:w-1/2">
               <p className="text-md py-2 leading-8 text-gray-800 text-center dark:text-white">
                 As a front-end developer, I have completed several projects that
                 showcase my skills in creating{" "}
@@ -83,15 +92,17 @@ export default function Home() {
                 <span className="text-teal-500"> responsive</span> user
                 interfaces.
               </p>
-              <div className="md:grid md:grid-cols-2">
-                <div className="py-2 md:mx-auto md:w-1/2">
+              <div className="md:grid md:grid-cols-2 md:mx-auto md:gap-10">
+                <div className="w-full py-2">
                   <Image
                     src="/patsbbqss.png"
                     alt="me"
-                    width="500"
-                    height="500"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "auto" }}
                   />
-                  <p className="shadow-xl p-7 rounded-xl dark:text-white">
+                  <p className="shadow-xl p-7 rounded-b-xl dark:text-white dark:bg-cyan-800">
                     I created a stunning website for my uncle's barbeque
                     catering business. The site features high-quality food
                     images, and an intuitive menu. My uncle loved it, and I'm
@@ -99,14 +110,16 @@ export default function Home() {
                     power of the web.
                   </p>
                 </div>
-                <div className="py-2 md:mx-auto md:w-1/2">
+                <div className="w-full py-2">
                   <Image
                     src="/bestrqss.png"
                     alt="me"
-                    width="500"
-                    height="500"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "auto" }}
                   />
-                  <p className="shadow-lg p-7 rounded-xl dark:text-white">
+                  <p className="shadow-lg p-7 rounded-b-xl dark:text-white dark:bg-cyan-800">
                     At Cognizant, I built a venue request single-page app that
                     had dynamic form validation, real-time search, and
                     responsive design. This project helped me strengthen my
@@ -116,14 +129,16 @@ export default function Home() {
                     development.
                   </p>
                 </div>
-                <div className="py-2 md:mx-auto md:w-1/2">
+                <div className="w-full py-2">
                   <Image
                     src="/pixelgramss.png"
                     alt="me"
-                    width="500"
-                    height="500"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "auto" }}
                   />
-                  <p className="shadow-lg p-7 rounded-xl dark:text-white">
+                  <p className="shadow-lg p-7 rounded-b-xl dark:text-white dark:bg-cyan-800">
                     I contributed to a three-week project building a mock
                     Instagram app with Angular and Spring Boot. It included
                     features like user authentication, image uploading, and a
@@ -132,9 +147,16 @@ export default function Home() {
                     collaboration skills.
                   </p>
                 </div>
-                <div className="py-2 md:mx-auto md:w-1/2">
-                  <Image src="/flowss.png" alt="me" width="500" height="500" />
-                  <p className="shadow-lg p-7 rounded-xl dark:text-white">
+                <div className="w-full py-2">
+                  <Image
+                    src="/flowss.png"
+                    alt="me"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                  <p className="shadow-lg p-7 rounded-b-xl dark:text-white dark:bg-cyan-800">
                     Contributed to a team that developed an internal management
                     tool using React and Spring Boot for new hire onboarding.
                     The app streamlined the process by allowing managers to
@@ -197,7 +219,7 @@ export default function Home() {
                 </div>
                 <button
                   type="submit"
-                  className="py-3 px-5 text-sm font-medium text-center rounded-lg sm:w-fit bg-gradient-to-r from-blue-500 to-green-500 text-white"
+                  className="py-3 px-5 text-sm font-medium text-center rounded-lg sm:w-fit bg-gradient-to-r from-cyan-800 to-green-500 text-white"
                 >
                   Send message
                 </button>

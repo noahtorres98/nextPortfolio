@@ -33,18 +33,7 @@ export default function Home() {
             <li><Link href="#contact">Contact</Link></li>
           </ul> */}
             <ul className="flex items-center">
-              <li>
-                <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="/Torres Resume 2023.pdf"
-                  download="Torres Resume 2023.pdf"
-                >
-                  Resume
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div className="flex place-content-end items-center space-x-1">
+            <div className="flex place-content-end items-center space-x-1">
             <MdDarkMode />
             <label className="relative inline-flex items-center cursor-pointer">
               <input
@@ -57,6 +46,17 @@ export default function Home() {
             </label>
             <CiDark className="dark:text-white" />
           </div>
+              <li>
+                <a
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  href="/Torres Resume 2023.pdf"
+                  download="Torres Resume 2023.pdf"
+                >
+                  Resume
+                </a>
+              </li>
+            </ul>
+          </nav>
           <div id="about" className="text-center p-10 ">
             <h2 className="text-5xl md:py-2 text-teal-600 font-medium">
               Noah Torres

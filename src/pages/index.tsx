@@ -20,7 +20,7 @@ export default function Home() {
       <main className="bg-slate-50 dark:bg-cyan-950 px-10">
         <section className="min-h-screen">
           <nav className="py-10 md:mb-12 flex justify-between">
-            <h1 className="text-xl">
+            <h1 className="text-xl" data-aos="fade-up" data-aos-delay="50">
               <Image
                 src={"/nt-logo-transparent.png"}
                 alt="logo"
@@ -34,19 +34,19 @@ export default function Home() {
             <li><Link href="#contact">Contact</Link></li>
           </ul> */}
             <ul className="flex items-center">
-            <div className="flex place-content-end items-center space-x-1">
-            <MdDarkMode />
-            <label className="relative inline-flex items-center cursor-pointer">
-              <input
-                type="checkbox"
-                value=""
-                className="sr-only peer"
-                onClick={() => setDarkMode(!darkMode)}
-              />
-              <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-teal-300 dark:peer-focus:ring-teal-500 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-teal-500"></div>
-            </label>
-            <CiDark className="dark:text-white" />
-          </div>
+              <div className="flex place-content-end items-center space-x-1">
+                <MdDarkMode />
+                <label className="relative inline-flex items-center cursor-pointer">
+                  <input
+                    type="checkbox"
+                    value=""
+                    className="sr-only peer"
+                    onClick={() => setDarkMode(!darkMode)}
+                  />
+                  <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-teal-300 dark:peer-focus:ring-teal-500 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-teal-500"></div>
+                </label>
+                <CiDark className="dark:text-white" />
+              </div>
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
@@ -59,16 +59,17 @@ export default function Home() {
             </ul>
           </nav>
           <div id="about" className="text-center p-10 ">
-            <h2 className="text-5xl md:py-2 text-teal-600 font-medium">
-              Noah Torres
-            </h2>
-            <h3 className="text-2xl py-2 dark:text-white">
-              Frontend Developer
-            </h3>
+            <div >
+              <h2 className="text-5xl md:py-2 text-teal-600 font-medium" data-aos="zoom-in" data-aos-dalay="50">
+                Noah Torres
+              </h2>
+              <h3 className="text-2xl py-2 dark:text-white">
+                Frontend Developer
+              </h3>
+            </div>
             <p className="lg:w-96 text-md lg:text-lg py-5 leading-1 md:leading-8 mx-auto dark:text-white">
-              I am passionate about creating engaging and user-friendly interfaces.
-              When I'm not coding, you can find me watching soccer and Formula
-              1, playing video games, or building computers. I thrive on
+              I am
+              passionate about creating engaging and user-friendly interfaces. I thrive on
               learning new things and tackling new challenges, and I am always
               looking for ways to grow both personally and professionally.
             </p>
@@ -91,23 +92,47 @@ export default function Home() {
               </div>
             </div> */}
           </div>
+          <Project />
           <div id="projects">
-            <h1 className="text-center text-3xl font-bold dark:text-white">
+            <h1
+              className="text-center text-3xl font-bold dark:text-white"
+              data-aos="zoom-in"
+            >
               Projects Portfolio
             </h1>
             <div className="mx-auto lg:max-w-7xl">
-              <p className="text-md py-2 leading-8 text-gray-800 text-center dark:text-white lg:text-lg lg:w-96 mx-auto lg:pt-10 lg:pb-10">
+              <p
+                className="text-md py-2 leading-8 text-gray-800 text-center dark:text-white lg:text-lg lg:w-96 mx-auto lg:pt-10 lg:pb-10"
+                data-aos="zoom-in"
+                data-aos-dely="50"
+              >
                 As a front-end developer, I have completed several projects that
                 showcase my skills in creating{" "}
                 <span className="text-teal-500">beautiful</span> and{" "}
                 <span className="text-teal-500"> responsive</span> user
                 interfaces.
               </p>
+<<<<<<< HEAD
               <div className="md:grid md:grid-cols-2 md:mx-auto md:gap-10">
 
                 <Project />
                 
                 {/* <div className="w-full py-2">
+=======
+              <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
+                <div className="relative">
+                  {/* <Image
+                    src="/patsbbqss.png"
+                    alt="me"
+                    width={0}
+                    height={0}
+                    sizes="100vw"
+                    style={{ width: "100%" }}
+                  /> */}
+                  <Project />
+                </div>
+                <div className="relative">
+>>>>>>> e42e4874622a112ca87b2d7bad0db67c7c7eb361
                   <Image
                     src="/bestrqss.png"
                     alt="me"
@@ -116,7 +141,7 @@ export default function Home() {
                     sizes="100vw"
                     style={{ width: "100%", height: "auto" }}
                   />
-                  <p className="shadow-lg p-7 rounded-b-xl dark:text-white dark:bg-cyan-800">
+                  <p className="shadow-lg p-7 dark:text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                     At Cognizant, I built a venue request single-page app that
                     had dynamic form validation, real-time search, and
                     responsive design. This project helped me strengthen my
@@ -126,16 +151,17 @@ export default function Home() {
                     development.
                   </p>
                 </div>
-                <div className="w-full py-2">
-                  <Image
+                <div className="relative">
+                  {/* <Image
                     src="/pixelgramss.png"
                     alt="me"
                     width={0}
                     height={0}
                     sizes="100vw"
                     style={{ width: "100%", height: "auto" }}
-                  />
-                  <p className="shadow-lg p-7 rounded-b-xl dark:text-white dark:bg-cyan-800">
+                  /> */}
+                  <img src="/pixelgramss.png" />
+                  <p className="shadow-lg p-7 dark:text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                     I contributed to a three-week project building a mock
                     Instagram app with Angular and Spring Boot. It included
                     features like user authentication, image uploading, and a
@@ -144,16 +170,17 @@ export default function Home() {
                     collaboration skills.
                   </p>
                 </div>
-                <div className="w-full py-2">
-                  <Image
+                <div className="relative">
+                  {/* <Image
                     src="/flowss.png"
                     alt="me"
                     width={0}
                     height={0}
                     sizes="100vw"
                     style={{ width: "100%", height: "auto" }}
-                  />
-                  <p className="shadow-lg p-7 rounded-b-xl dark:text-white dark:bg-cyan-800">
+                  /> */}
+                  <img src="/flowss.png" />
+                  <p className="shadow-lg p-7 dark:text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                     Contributed to a team that developed an internal management
                     tool using React and Spring Boot for new hire onboarding.
                     The app streamlined the process by allowing managers to

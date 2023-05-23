@@ -166,13 +166,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div id="contact" className="pt-10">
+          <div className="pt-10">
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
               <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center dark:text-white">
                 Contact
               </h2>
-              <form name="contact" onSubmit={handleSubmit} className="space-y-8" method="POST" data-netlify="true">
-                <input type="hidden" name="form-name" value="contact" />
+              <form name="contact" className="space-y-8" method="POST" data-netlify="true">
+                {/* <input type="hidden" name="form-name" value="contact" /> */}
                 <div>
                   <label
                     htmlFor="name"

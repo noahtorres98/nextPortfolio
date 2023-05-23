@@ -4,7 +4,6 @@ import { MdDarkMode } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import Project from "../../components/Project";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -20,7 +19,7 @@ export default function Home() {
       <main className="bg-slate-50 dark:bg-cyan-950 px-10">
         <section className="min-h-screen">
           <nav className="py-10 md:mb-12 flex justify-between">
-            <h1 className="text-xl" data-aos="fade-up" data-aos-delay="50">
+            <h1 className="text-xl">
               <Image
                 src={"/nt-logo-transparent.png"}
                 alt="logo"
@@ -48,31 +47,38 @@ export default function Home() {
                 <CiDark className="dark:text-white" />
               </div>
               <li>
-                <a
-                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                  href="/Torres Resume 2023.pdf"
-                  download="Torres Resume 2023.pdf"
-                >
-                  Resume
-                </a>
+                <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300">
+                  <a
+                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                    href="/Torres Resume 2023.pdf"
+                    download="Torres Resume 2023.pdf"
+                  >
+                    Resume
+                  </a>
+                </button>
               </li>
             </ul>
           </nav>
           <div id="about" className="text-center p-10 ">
-            <div >
-              <h2 className="text-5xl md:py-2 text-teal-600 font-medium" data-aos="zoom-in" data-aos-dalay="50">
-                Noah Torres
-              </h2>
+            <h2
+              className="text-5xl md:py-2 text-teal-600 font-medium"
+              data-aos="zoom-in"
+              data-aos-dalay="1000"
+              data-aos-duration="1000"
+            >
+              Noah Torres
+            </h2>
+            <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
               <h3 className="text-2xl py-2 dark:text-white">
                 Frontend Developer
               </h3>
+              <p className="lg:w-96 text-md lg:text-lg py-5 leading-1 md:leading-8 mx-auto dark:text-white">
+                I am passionate about creating engaging and user-friendly
+                interfaces. I thrive on learning new things and tackling new
+                challenges, and I am always looking for ways to grow both
+                personally and professionally.
+              </p>
             </div>
-            <p className="lg:w-96 text-md lg:text-lg py-5 leading-1 md:leading-8 mx-auto dark:text-white">
-              I am
-              passionate about creating engaging and user-friendly interfaces. I thrive on
-              learning new things and tackling new challenges, and I am always
-              looking for ways to grow both personally and professionally.
-            </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-200">
               <Link href="https://github.com/noahtorres98">
                 <AiFillGithub />
@@ -81,7 +87,7 @@ export default function Home() {
                 <AiFillLinkedin />
               </Link>
             </div>
-            {/* <div className="relative bg-gradient-to-b from-teal-500 mx-auto rounded-full mt-20 lg:w-80 lg:h-80 w-40 h-40">
+            <div className="relative bg-gradient-to-b from-teal-500 mx-auto rounded-full mt-20 lg:w-80 lg:h-80 w-40 h-40">
               <div className="h-52">
                 <Image
                   src={"/headshot.png"}
@@ -90,9 +96,8 @@ export default function Home() {
                   className="rounded-full"
                 />
               </div>
-            </div> */}
+            </div>
           </div>
-          <Project />
           <div id="projects">
             <h1
               className="text-center text-3xl font-bold dark:text-white"
@@ -112,82 +117,52 @@ export default function Home() {
                 <span className="text-teal-500"> responsive</span> user
                 interfaces.
               </p>
-<<<<<<< HEAD
-              <div className="md:grid md:grid-cols-2 md:mx-auto md:gap-10">
-
-                <Project />
-                
-                {/* <div className="w-full py-2">
-=======
               <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
-                <div className="relative">
-                  {/* <Image
-                    src="/patsbbqss.png"
-                    alt="me"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{ width: "100%" }}
-                  /> */}
-                  <Project />
-                </div>
-                <div className="relative">
->>>>>>> e42e4874622a112ca87b2d7bad0db67c7c7eb361
-                  <Image
-                    src="/bestrqss.png"
-                    alt="me"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{ width: "100%", height: "auto" }}
-                  />
-                  <p className="shadow-lg p-7 dark:text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
-                    At Cognizant, I built a venue request single-page app that
-                    had dynamic form validation, real-time search, and
-                    responsive design. This project helped me strengthen my
-                    skills in HTML, CSS, and JavaScript, and I gained a deeper
-                    understanding of single-page apps. The experience was
-                    fulfilling and further fueled my passion for web
-                    development.
+                <div className="relative shadow-xl" data-aos="flip-left" data-aos-duration="1000">
+                  <img src="/patsbbqss.png" />
+                  <p className="text-sm lg:text-lg shadow-xl p-5 text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+                    I created a website for my uncle's barbeque catering
+                    business. The site features high-quality food images, and an
+                    intuitive menu.{" "}
+                    {/*My uncle loved it, and I'm
+                    proud to have contributed to his business growth through the
+                    power of the web. */}
                   </p>
                 </div>
-                <div className="relative">
-                  {/* <Image
-                    src="/pixelgramss.png"
-                    alt="me"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{ width: "100%", height: "auto" }}
-                  /> */}
+                <div className="relative shadow-xl" data-aos="flip-right" data-aos-duration="1000">
+                  <img src="/bestrqss.png" />
+                  <p className="text-sm lg:text-lg shadow-lg p-5 text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+                    At Cognizant, I built a venue request single-page app that
+                    had dynamic form validation, real-time search, and
+                    responsive design.{" "}
+                    {/*This project helped me strengthen my
+                    skills in HTML, CSS, and JavaScript, and I gained a deeper
+                    understanding of single-page apps. */}
+                  </p>
+                </div>
+                <div className="relative shadow-xl" data-aos="flip-left" data-aos-duration="1000">
                   <img src="/pixelgramss.png" />
-                  <p className="shadow-lg p-7 dark:text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+                  <p className="text-sm lg:text-lg shadow-lg p-5 text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                     I contributed to a three-week project building a mock
                     Instagram app with Angular and Spring Boot. It included
                     features like user authentication, image uploading, and a
-                    news feed. Through this collaboration, I gained valuable
+                    news feed.{" "}
+                    {/*Through this collaboration, I gained valuable
                     experience in full-stack web development and honed my
-                    collaboration skills.
+                    collaboration skills. */}
                   </p>
                 </div>
-                <div className="relative">
-                  {/* <Image
-                    src="/flowss.png"
-                    alt="me"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{ width: "100%", height: "auto" }}
-                  /> */}
+                <div className="relative shadow-xl" data-aos="flip-right" data-aos-duration="1000">
                   <img src="/flowss.png" />
-                  <p className="shadow-lg p-7 dark:text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
-                    Contributed to a team that developed an internal management
-                    tool using React and Spring Boot for new hire onboarding.
-                    The app streamlined the process by allowing managers to
-                    create groups and monitor progress. Valuable full-stack
-                    development experience was gained through this project.
+                  <p className="text-sm lg:text-lg shadow-lg p-5 text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+                    I contributed to a team that developed a management tool
+                    using React and Spring Boot for new hire onboarding. The app
+                    streamlined the process by allowing managers to create
+                    groups and monitor progress.{" "}
+                    {/* Valuable full-stack
+                    development experience was gained through this project. */}
                   </p>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
@@ -243,7 +218,7 @@ export default function Home() {
                 </div>
                 <button
                   type="submit"
-                  className="py-3 px-5 text-sm font-medium text-center rounded-lg sm:w-fit bg-gradient-to-r from-cyan-800 to-green-500 text-white"
+                  className="py-3 px-5 text-sm font-medium text-center rounded-lg sm:w-fit bg-gradient-to-r from-cyan-800 to-green-500 text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
                 >
                   Send message
                 </button>

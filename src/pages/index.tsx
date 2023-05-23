@@ -58,7 +58,7 @@ export default function Home() {
               data-aos-duration="1000"
             >
               <h3 className="text-2xl py-2 dark:text-white">
-                Frontend Developer
+                Front-End Developer
               </h3>
               <p className="lg:w-96 text-md lg:text-lg py-5 leading-1 md:leading-8 mx-auto dark:text-white">
                 I am passionate about creating engaging and user-friendly

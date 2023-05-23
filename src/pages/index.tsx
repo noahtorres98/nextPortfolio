@@ -1,6 +1,7 @@
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import { CiDark } from "react-icons/ci";
 import { MdDarkMode } from "react-icons/md";
+import { BsFillMoonStarsFill } from "react-icons/bs";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -27,36 +28,20 @@ export default function Home() {
                 height={"50"}
               ></Image>
             </h1>
-            {/* <ul className="flex space-x-6">
-          <li><Link href="#about">About Me</Link></li>
-            <li><Link href="#projects">Projects</Link></li>
-            <li><Link href="#contact">Contact</Link></li>
-          </ul> */}
             <ul className="flex items-center">
-              <div className="flex place-content-end items-center space-x-1">
-                <MdDarkMode />
-                <label className="relative inline-flex items-center cursor-pointer">
-                  <input
-                    type="checkbox"
-                    value=""
-                    className="sr-only peer"
-                    onClick={() => setDarkMode(!darkMode)}
-                  />
-                  <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-teal-300 dark:peer-focus:ring-teal-500 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-teal-500"></div>
-                </label>
-                <CiDark className="dark:text-white" />
-              </div>
-              <li>
-                <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 rounded-md">
-                  <a
-                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
-                    href="/Torres Resume 2023.pdf"
-                    download="Torres Resume 2023.pdf"
-                  >
-                    Resume
-                  </a>
-                </button>
-              </li>
+              <BsFillMoonStarsFill
+                className="dark:text-white cursor-pointer"
+                onClick={() => setDarkMode(!darkMode)}
+              />
+              <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 rounded-md">
+                <a
+                  className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
+                  href="/Torres Resume 2023.pdf"
+                  download="Torres Resume 2023.pdf"
+                >
+                  Resume
+                </a>
+              </button>
             </ul>
           </nav>
           <div id="about" className="text-center p-10 ">
@@ -68,7 +53,11 @@ export default function Home() {
             >
               Noah Torres
             </h2>
-            <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="1000">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="1000"
+              data-aos-duration="1000"
+            >
               <h3 className="text-2xl py-2 dark:text-white">
                 Frontend Developer
               </h3>
@@ -118,7 +107,11 @@ export default function Home() {
                 interfaces.
               </p>
               <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
-                <div className="relative shadow-xl" data-aos="flip-left" data-aos-duration="1000">
+                <div
+                  className="relative shadow-xl"
+                  data-aos="flip-left"
+                  data-aos-duration="1000"
+                >
                   <img src="/patsbbqss.png" />
                   <p className="text-sm lg:text-lg shadow-xl p-5 text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                     I created a website for my uncle's barbeque catering
@@ -129,7 +122,11 @@ export default function Home() {
                     power of the web. */}
                   </p>
                 </div>
-                <div className="relative shadow-xl" data-aos="flip-right" data-aos-duration="1000">
+                <div
+                  className="relative shadow-xl"
+                  data-aos="flip-right"
+                  data-aos-duration="1000"
+                >
                   <img src="/bestrqss.png" />
                   <p className="text-sm lg:text-lg shadow-lg p-5 text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                     At Cognizant, I built a venue request single-page app that
@@ -140,7 +137,11 @@ export default function Home() {
                     understanding of single-page apps. */}
                   </p>
                 </div>
-                <div className="relative shadow-xl" data-aos="flip-left" data-aos-duration="1000">
+                <div
+                  className="relative shadow-xl"
+                  data-aos="flip-left"
+                  data-aos-duration="1000"
+                >
                   <img src="/pixelgramss.png" />
                   <p className="text-sm lg:text-lg shadow-lg p-5 text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                     I contributed to a three-week project building a mock
@@ -152,7 +153,11 @@ export default function Home() {
                     collaboration skills. */}
                   </p>
                 </div>
-                <div className="relative shadow-xl" data-aos="flip-right" data-aos-duration="1000">
+                <div
+                  className="relative shadow-xl"
+                  data-aos="flip-right"
+                  data-aos-duration="1000"
+                >
                   <img src="/flowss.png" />
                   <p className="text-sm lg:text-lg shadow-lg p-5 text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                     I contributed to a team that developed a management tool
@@ -171,7 +176,12 @@ export default function Home() {
               <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center dark:text-white">
                 Contact
               </h2>
-              <form name="contact" className="space-y-8" method="POST" data-netlify="true">
+              <form
+                name="contact"
+                className="space-y-8"
+                method="POST"
+                data-netlify="true"
+              >
                 <input type="hidden" name="form-name" value="contact" />
                 <div>
                   <label

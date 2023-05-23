@@ -4,6 +4,7 @@ import { MdDarkMode } from "react-icons/md";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import Project from "../../components/Project";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -65,10 +66,7 @@ export default function Home() {
               Frontend Developer
             </h3>
             <p className="lg:w-96 text-md lg:text-lg py-5 leading-1 md:leading-8 mx-auto dark:text-white">
-              As a front-end developer seeking new opportunities, I am eager to
-              expand my skill set and become a full-stack developer. I am
-              passionate about creating engaging and user-friendly interfaces,
-              and I am excited to apply this expertise to the back-end as well.
+              I am passionate about creating engaging and user-friendly interfaces.
               When I'm not coding, you can find me watching soccer and Formula
               1, playing video games, or building computers. I thrive on
               learning new things and tackling new challenges, and I am always
@@ -82,7 +80,7 @@ export default function Home() {
                 <AiFillLinkedin />
               </Link>
             </div>
-            <div className="relative bg-gradient-to-b from-teal-500 mx-auto rounded-full mt-20 lg:w-80 lg:h-80 w-40 h-40">
+            {/* <div className="relative bg-gradient-to-b from-teal-500 mx-auto rounded-full mt-20 lg:w-80 lg:h-80 w-40 h-40">
               <div className="h-52">
                 <Image
                   src={"/headshot.png"}
@@ -91,7 +89,7 @@ export default function Home() {
                   className="rounded-full"
                 />
               </div>
-            </div>
+            </div> */}
           </div>
           <div id="projects">
             <h1 className="text-center text-3xl font-bold dark:text-white">
@@ -106,24 +104,10 @@ export default function Home() {
                 interfaces.
               </p>
               <div className="md:grid md:grid-cols-2 md:mx-auto md:gap-10">
-                <div className="w-full py-2">
-                  <Image
-                    src="/patsbbqss.png"
-                    alt="me"
-                    width={0}
-                    height={0}
-                    sizes="100vw"
-                    style={{ width: "100%", height: "auto" }}
-                  />
-                  <p className="bg-white shadow-xl p-7 rounded-b-xl dark:text-white dark:bg-cyan-800">
-                    I created a stunning website for my uncle's barbeque
-                    catering business. The site features high-quality food
-                    images, and an intuitive menu. My uncle loved it, and I'm
-                    proud to have contributed to his business growth through the
-                    power of the web.
-                  </p>
-                </div>
-                <div className="w-full py-2">
+
+                <Project />
+                
+                {/* <div className="w-full py-2">
                   <Image
                     src="/bestrqss.png"
                     alt="me"
@@ -176,7 +160,7 @@ export default function Home() {
                     create groups and monitor progress. Valuable full-stack
                     development experience was gained through this project.
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

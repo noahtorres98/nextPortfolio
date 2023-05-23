@@ -172,7 +172,7 @@ export default function Home() {
                 Contact
               </h2>
               <form name="contact" className="space-y-8" method="POST" data-netlify="true">
-                {/* <input type="hidden" name="form-name" value="contact" /> */}
+                <input type="hidden" name="form-name" value="contact" />
                 <div>
                   <label
                     htmlFor="name"

@@ -109,7 +109,7 @@ export default function Home() {
                 <div
                   className="relative shadow-xl"
                   data-aos="flip-left"
-                  data-aos-duration="1000"
+                  data-aos-duration="2000"
                 >
                   <img src="/patsbbqss.png" />
                   <p className="text-sm lg:text-lg shadow-xl p-5 text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
@@ -124,7 +124,7 @@ export default function Home() {
                 <div
                   className="relative shadow-xl"
                   data-aos="flip-right"
-                  data-aos-duration="1000"
+                  data-aos-duration="2000"
                 >
                   <img src="/bestrqss.png" />
                   <p className="text-sm lg:text-lg shadow-lg p-5 text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
@@ -139,7 +139,7 @@ export default function Home() {
                 <div
                   className="relative shadow-xl"
                   data-aos="flip-left"
-                  data-aos-duration="1000"
+                  data-aos-duration="2000"
                 >
                   <img src="/pixelgramss.png" />
                   <p className="text-sm lg:text-lg shadow-lg p-5 text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
@@ -155,7 +155,7 @@ export default function Home() {
                 <div
                   className="relative shadow-xl"
                   data-aos="flip-right"
-                  data-aos-duration="1000"
+                  data-aos-duration="2000"
                 >
                   <img src="/flowss.png" />
                   <p className="text-sm lg:text-lg shadow-lg p-5 text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">

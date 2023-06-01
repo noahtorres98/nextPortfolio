@@ -111,22 +111,24 @@ export default function Home() {
                   data-aos="flip-left"
                   data-aos-duration="2000"
                 >
-                  <img src="/patsbbqss.png" className="rounded"/>
-                  <p className="text-sm lg:text-lg shadow-xl p-5 text-white rounded dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
-                    I created a website for my uncle's barbeque catering
-                    business. The site features high-quality food images, and an
-                    intuitive menu.{" "}
-                    {/*My uncle loved it, and I'm
+                  <a href="https://patstxbbq.netlify.app/" target="_blank">
+                    <img src="/patsbbqss.png" className="rounded" />
+                    <p className="text-sm lg:text-lg shadow-xl p-5 text-white rounded dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+                      I created a website for my uncle's barbeque catering
+                      business. The site features high-quality food images, and
+                      an intuitive menu.{" "}
+                      {/*My uncle loved it, and I'm
                     proud to have contributed to his business growth through the
                     power of the web. */}
-                  </p>
+                    </p>
+                  </a>
                 </div>
                 <div
                   className="relative shadow-xl"
                   data-aos="flip-right"
                   data-aos-duration="2000"
                 >
-                  <img src="/bestrqss.png" className="rounded"/>
+                  <img src="/bestrqss.png" className="rounded" />
                   <p className="text-sm lg:text-lg shadow-lg p-5 text-white rounded dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                     At Cognizant, I built a venue request single-page app that
                     had dynamic form validation, real-time search, and
@@ -141,7 +143,7 @@ export default function Home() {
                   data-aos="flip-left"
                   data-aos-duration="2000"
                 >
-                  <img src="/pixelgramss.png" className="rounded"/>
+                  <img src="/pixelgramss.png" className="rounded" />
                   <p className="text-sm lg:text-lg shadow-lg p-5 text-white rounded dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                     I contributed to a three-week project building a mock
                     Instagram app with Angular and Spring Boot. It included
@@ -157,7 +159,7 @@ export default function Home() {
                   data-aos="flip-right"
                   data-aos-duration="2000"
                 >
-                  <img src="/flowss.png" className="rounded"/>
+                  <img src="/flowss.png" className="rounded" />
                   <p className="text-sm lg:text-lg shadow-lg p-5 text-white rounded dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                     I contributed to a team that developed a management tool
                     using React and Spring Boot for new hire onboarding. The app

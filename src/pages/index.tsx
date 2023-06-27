@@ -35,8 +35,8 @@ export default function Home() {
               />
               <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ml-8 bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md">
                 <a
-                  href="/Torres Resume 2023.pdf"
-                  download="Torres Resume 2023.pdf"
+                  href="/Portfolio Resume 2023.pdf"
+                  download="Portfolio Resume 2023.pdf"
                 >
                   Resume
                 </a>
@@ -159,10 +159,10 @@ export default function Home() {
                 >
                   <img src="/flowss.png" />
                   <p className="text-sm lg:text-lg shadow-lg p-5 text-white dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
-                    I contributed to a team that developed a management tool
-                    using React and Spring Boot for new hire onboarding. The app
-                    streamlined the process by allowing managers to create
-                    groups and monitor progress.{" "}
+                    Currently building a management tool using React and
+                    Spring Boot for new hire onboarding. The app streamlined the
+                    process by allowing managers to create groups and monitor
+                    progress.{" "}
                     {/* Valuable full-stack
                     development experience was gained through this project. */}
                   </p>

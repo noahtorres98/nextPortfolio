@@ -35,8 +35,8 @@ export default function Home() {
               />
               <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ml-8 bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md">
                 <a
-                  href="/Portfolio Resume 2023.pdf"
-                  download="Portfolio Resume 2023.pdf"
+                  href="/Noah Torres.pdf"
+                  download="Noah Torres.pdf"
                 >
                   Resume
                 </a>

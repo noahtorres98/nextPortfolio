@@ -34,10 +34,7 @@ export default function Home() {
                 onClick={() => setDarkMode(!darkMode)}
               />
               <button className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ml-8 bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md">
-                <a
-                  href="/Noah Torres.pdf"
-                  download="Noah Torres.pdf"
-                >
+                <a href="/Noah Torres.pdf" download="Noah Torres.pdf">
                   Resume
                 </a>
               </button>
@@ -58,13 +55,13 @@ export default function Home() {
               data-aos-duration="1000"
             >
               <h3 className="text-2xl py-2 dark:text-white">
-                Front-End Developer
+                Full-Stack Developer
               </h3>
               <p className="lg:w-96 text-md lg:text-lg py-5 leading-1 md:leading-8 mx-auto dark:text-white">
-                I am passionate about creating engaging and user-friendly
-                interfaces. I thrive on learning new things and tackling new
-                challenges, and I am always looking for ways to grow both
-                personally and professionally.
+                I'm a full-stack developer who loves building clean,
+                user-friendly interfaces and solid, reliable backends. I'm
+                always looking to learn something new and enjoy taking on
+                challenges that push me to grow—both in my work and in life.
               </p>
             </div>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-200">
@@ -116,10 +113,7 @@ export default function Home() {
                     <p className="text-sm lg:text-lg shadow-xl p-5 text-white rounded dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                       I created a website for my uncle's barbeque catering
                       business. The site features high-quality food images, and
-                      an intuitive menu.{" "}
-                      {/*My uncle loved it, and I'm
-                    proud to have contributed to his business growth through the
-                    power of the web. */}
+                      an intuitive menu.
                     </p>
                   </a>
                 </div>
@@ -132,10 +126,7 @@ export default function Home() {
                   <p className="text-sm lg:text-lg shadow-lg p-5 text-white rounded dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
                     At Cognizant, I built a venue request single-page app that
                     had dynamic form validation, real-time search, and
-                    responsive design.{" "}
-                    {/*This project helped me strengthen my
-                    skills in HTML, CSS, and JavaScript, and I gained a deeper
-                    understanding of single-page apps. */}
+                    responsive design.
                   </p>
                 </div>
                 <div
@@ -148,10 +139,7 @@ export default function Home() {
                     I contributed to a three-week project building a mock
                     Instagram app with Angular and Spring Boot. It included
                     features like user authentication, image uploading, and a
-                    news feed.{" "}
-                    {/*Through this collaboration, I gained valuable
-                    experience in full-stack web development and honed my
-                    collaboration skills. */}
+                    news feed.
                   </p>
                 </div>
                 <div
@@ -161,12 +149,34 @@ export default function Home() {
                 >
                   <img src="/flowss.png" className="rounded" />
                   <p className="text-sm lg:text-lg shadow-lg p-5 text-white rounded dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
-                    Currently building a management tool using React and Spring
-                    Boot for new hire onboarding. The app streamlined the
-                    process by allowing managers to create groups and monitor
-                    progress.{" "}
-                    {/* Valuable full-stack
-                    development experience was gained through this project. */}
+                    Helped build a management tool using React and Spring Boot
+                    for new hire onboarding. The app streamlined the process by
+                    allowing managers to create groups and monitor progress.
+                  </p>
+                </div>
+                <div
+                  className="relative shadow-xl"
+                  data-aos="flip-left"
+                  data-aos-duration="2000"
+                >
+                  <img src="/discord.png" className="w-full h-full rounded" />
+                  <p className="text-sm lg:text-lg shadow-lg p-5 text-white rounded dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+                    Currently building a front-end clone of Discord using React
+                    and Tailwind CSS, focusing on UI/UX design, responsive
+                    layout, and component-based architecture.
+                  </p>
+                </div>
+                <div
+                  className="relative shadow-xl"
+                  data-aos="flip-right"
+                  data-aos-duration="2000"
+                >
+                  <img src="/MovieApi.png" className="rounded" />
+                  <p className="text-sm lg:text-lg shadow-lg p-5 text-white rounded dark:bg-cyan-800 absolute bottom-0 left-0 right-0 top-0 h-full w-full overflow-hidden bg-gradient-to-r from-cyan-500 to-teal-500 opacity-0 transition duration-300 ease-in-out hover:opacity-100">
+                    Developed a full-stack movie database application with
+                    React, Spring Boot, and MongoDB. Features include CRUD
+                    operations, RESTful API integration, and a modern,
+                    responsive UI.
                   </p>
                 </div>
               </div>

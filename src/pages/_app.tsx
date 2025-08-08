@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from 'react';
-import { Montserrat } from "@next/font/google";
+import { Montserrat } from "next/font/google";
 
 const montserrat = Montserrat({
   subsets: ["latin"],

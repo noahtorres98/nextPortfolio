@@ -96,11 +96,12 @@ export default function Home() {
                 data-aos="zoom-in"
                 data-aos-dely="50"
               >
-                As a front-end developer, I have completed several projects that
-                showcase my skills in creating{" "}
-                <span className="text-teal-500">beautiful</span> and{" "}
-                <span className="text-teal-500"> responsive</span> user
-                interfaces.
+                Here are a few projects I've been working on that show what I've
+                been learning and building. They highlight my experience with
+                both front-end and back-end development, and reflect my focus on
+                <span className="text-teal-500"> beautiful </span> and
+                <span className="text-teal-500"> responsive </span>design, solid
+                functionality, and real-world problem-solving.
               </p>
               <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
                 <div

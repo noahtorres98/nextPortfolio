@@ -1,4 +1,3 @@
-import "@component/styles/globals.css";
 import type { AppProps } from "next/app";
 import AOS from "aos";
 import "aos/dist/aos.css";

@@ -9,7 +9,7 @@ const Hero = () => {
       <h2
         className="text-5xl md:py-2 text-teal-600 font-medium"
         data-aos="zoom-in"
-        data-aos-dalay="1000"
+        data-aos-delay="1000"
         data-aos-duration="1000"
       >
         Noah Torres
@@ -32,14 +32,13 @@ const Hero = () => {
         </Link>
       </div>
       <div className="relative bg-gradient-to-b from-teal-500 mx-auto rounded-full mt-20 lg:w-80 lg:h-80 w-40 h-40">
-        <div className="h-52">
-          <Image
-            src={"/headshot.png"}
-            alt="headshot"
-            layout="fill"
-            className="rounded-full"
-          />
-        </div>
+        <Image
+          src={"/headshot.png"}
+          alt="headshot"
+          width={320}
+          height={320}
+          className="rounded-full"
+        />
       </div>
     </div>
   );

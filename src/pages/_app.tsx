@@ -4,7 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import { Montserrat } from "next/font/google";
-import "../styles/globals.css"; // adjust path if your css is elsewhere
+import "../styles/globals.css";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
